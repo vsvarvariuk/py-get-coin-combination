@@ -20,7 +20,7 @@ from app.main import get_coin_combination
     ]
 )
 def test_count_number_of_coins(
-        enter_value,
-        expected_value
+        enter_value: int,
+        expected_value: list[int]
 ) -> None:
     assert get_coin_combination(enter_value) == expected_value
